@@ -29,6 +29,7 @@ module.exports = (array) => {
   return result;
 };
 
+
 // The MIT License
 //
 // Copyright JS Foundation and other contributors <https://js.foundation/>

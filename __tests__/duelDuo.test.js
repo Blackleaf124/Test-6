@@ -15,4 +15,9 @@ describe("Duel Duo tests", () => {
     await driver.get("http://localhost:8000");
     await driver.wait(until.titleIs("Duel Duo"), 1000);
   });
+
+  test("Page has Draw button", async () => {
+    await driver.get("http://localhost:8000");
+    expect(await driver.wait(until.elementLocated(by.css("draw"))))
+  })
 });
